@@ -7,19 +7,13 @@ use Inertia\Inertia; // use Inertia class
 
 class HomeController extends Controller{
 
-    public function index(){
-        
-        return Inertia::render('Home/Index', [
-
-            'name'=>'World!'
-
-        ]);
+    public function test1(){
+        return Inertia::render('Test1');
     }
 
-    public function about(){ 
-        
-        return Inertia::render('About/Index'); 
-    
+    public function test2(){
+        return Inertia::render('Test2');
+
     }
 
 }

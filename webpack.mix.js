@@ -16,9 +16,7 @@ mix.js('resources/js/app.js', 'public/js').vue({
     globalStyles: false
 });
 
-mix.postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+mix.sass('resources/scss/app.scss', 'public/css');
 
 mix.webpackConfig({
     output: {
